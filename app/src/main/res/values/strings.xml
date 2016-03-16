@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Copetova kuhinja v1.0</string>
+    <string name="main_label">Dobro došli u Copetovu kuhinju</string>
+    <string name="ulaz">Naručivanje</string>
+    <string name="obrok">Izaberite obrok:</string>
+    <string name="hrana1">Svinjetina sa krompirom i jajima</string>
+    <string name="hrana2">Dinstani sitni pirinač sa mlekom</string>
+    <string name="pice">Izaberite piće:</string>
+    <string name="pice1">Smrt u diskoteci</string>
+    <string name="pice2">Neko za seka perse</string>
+    <string name="komentar">Dodatni komentar:</string>
+    <string name="hint">Klikni na sliku ispod</string>
+    <string name="zaovde">Za ovde</string>
+    <string name="radiotext">Ovde ili nosite?</string>
+    <string name="zaponeti">Za poneti</string>
+    <string name="obrada">Obrađujem...</string>
+    <string name="naslov3">Poručeno:</string>
+    <string name="nokoment">Bez dodatnih komentara</string>
+    <string name="izabrani_obrok">Obrok:</string>
+    <string name="separator">------------------------</string>
+
+
+</resources>

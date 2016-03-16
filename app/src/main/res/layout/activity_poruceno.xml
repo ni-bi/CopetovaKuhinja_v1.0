@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/turquoise"
+    tools:context="com.example.samsung.koddzoa.TrecaActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/naslov3"
+        android:id="@+id/naslov"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/slika"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/obrok"
+        android:id="@+id/Jelo"
+        android:layout_below="@+id/naslov"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/tekst_velicina"
+        android:textColor="@color/crna"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pice"
+        android:id="@+id/Pice"
+        android:layout_below="@+id/Jelo"
+        android:textColor="@color/crna"
+        android:textSize="@dimen/tekst_velicina"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/komentar"
+        android:id="@+id/Komentar"
+        android:layout_below="@+id/Pice"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/tekst_velicina"
+        android:textColor="@color/crna"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/radiotext"
+        android:id="@+id/Isporuka"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Komentar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/tekst_velicina"
+        android:textColor="@color/crna"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test"
+        android:layout_below="@id/Isporuka"/>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/Isporuka"
+    android:layout_alignParentBottom="true"
+    android:src="@drawable/cope"/>
+
+
+</RelativeLayout>

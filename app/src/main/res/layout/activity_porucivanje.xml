@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="16dp"
+
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/turquoise"
+    tools:context="com.example.samsung.koddzoa.DrugaActivity">
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/obrok"
+                android:textSize="@dimen/tekst_velicina"
+                android:textStyle="bold"
+                android:id="@+id/textView"
+                android:textColor="#000000"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/grupa1"
+                android:layout_below="@id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/komentar"
+                android:layout_marginLeft="16dp"
+                >
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hrana1"
+                    android:id="@+id/checkbox1"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hrana2"
+                    android:id="@+id/checkbox2"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/checkbox1"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="@string/pice"
+                android:textSize="@dimen/tekst_velicina"
+                android:textStyle="bold"
+                android:id="@+id/textView2"
+                android:textColor="#000000"
+                android:layout_below="@+id/grupa1"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                />
+
+            <RelativeLayout
+                android:id="@+id/grupa2"
+                android:layout_below="@id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/komentar"
+                android:layout_marginLeft="16dp">
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pice1"
+                    android:id="@+id/checkbox3"
+                    android:textColor="#000000"
+                    android:layout_centerHorizontal="true"
+
+                    />
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pice2"
+                    android:id="@+id/checkbox4"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/checkbox3"
+                    android:layout_centerHorizontal="true"
+
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/komentarText"
+                android:layout_below="@id/grupa2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/tekst_velicina"
+                android:textStyle="bold"
+                android:textColor="@color/crna"
+                android:text="@string/komentar"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:id="@+id/komentar"
+                android:layout_below="@+id/komentarText"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/komentar"
+                android:paddingLeft="@dimen/cbpadding"
+                android:paddingRight="@dimen/cbpadding"
+                android:layout_marginLeft="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radiotext"
+                android:textSize="@dimen/tekst_velicina"
+                android:textStyle="bold"
+                android:id="@+id/ovdeponeti"
+                android:layout_below="@id/komentar"
+                android:textColor="@color/crna"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ovdeponeti"
+                android:background="@drawable/komentar"
+                android:id="@+id/radioGroup"
+                android:layout_marginLeft="16dp"
+                android:onClick="onRadioButtonClicked"
+            >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zaovde"
+                    android:id="@+id/rb1" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zaponeti"
+                    android:id="@+id/rb2"
+
+                    />
+
+</RadioGroup>
+
+            <ImageButton
+                android:id="@+id/img2"
+                android:layout_below="@id/radioGroup"
+                android:layout_alignParentLeft="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/copetovakrug"
+                android:background="@color/turquoise"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
